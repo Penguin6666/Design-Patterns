@@ -22,4 +22,11 @@ public class Testt {
         double v = cashRebate.acceptCash(9999);
         System.out.println(v);
     }
+
+    @Test
+    public void test0(){
+        Context context = new Context(new CashRebate(0.7));
+        double v = context.ContextAcceptCash(999);
+        System.out.println(v);
+    }
 }
